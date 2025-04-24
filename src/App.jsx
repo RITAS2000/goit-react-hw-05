@@ -1,1 +1,3 @@
-console.log('Готово до деплою!');
+export default function App() {
+  console.log('Готово до деплою!');
+}
