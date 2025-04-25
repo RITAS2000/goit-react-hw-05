@@ -28,3 +28,10 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(to bottom right,
+                rgba(22, 3, 39, 0.788),rgba(212, 21, 7, 0.884),rgba(236, 222, 28, 0.911));
+}

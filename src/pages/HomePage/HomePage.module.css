@@ -1,0 +1,19 @@
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 25px;
+}
+
+.movieItem {
+    width: 262px;
+    padding: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #19161d;
+    border: 2px solid rgb(238, 88, 29);
+    
+}
+

@@ -1,0 +1,22 @@
+.navContainer {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    height: 100%;
+    padding-left: 300px;
+}
+
+.headerText {
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+    -webkit-text-stroke: 2px #4b188f;
+    text-shadow: 0 4px 6px #2f0863;
+    transition: transform 0.4s ease;
+}
+
+.headerText:hover {
+    transform: scale(1.05);
+}

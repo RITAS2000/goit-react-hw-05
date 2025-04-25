@@ -1,0 +1,7 @@
+.container{
+    height: 80px;
+    background: linear-gradient( to bottom, rgb(230, 209, 23), rgba(221, 8, 8, 0.877));
+    border-bottom: 3px solid #2f0863;
+    box-shadow: 0 4px 6px #2f0863;
+    margin-bottom: 60px;
+}

@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    gap:60px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 25px 40px 25px;
+    border-bottom: 2px solid #fff;
+}
+.img {
+    border-radius: 8px;
+    border: 2px solid rgb(238, 88, 29);
+}
+.title {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.textContainer {
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.spanText {
+    font-weight: 700;
+}
+.links {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 25px 40px 25px;
+    border-bottom: 2px solid #fff;
+}
