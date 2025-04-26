@@ -3,22 +3,29 @@
     margin: 0 auto;
     padding: 0 25px;
 }
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
 
-}
-.movieItem {
-    width: 262px;
-    padding: 16px;
-    border-radius: 8px;
-    overflow: hidden;
-    background: #19161d;
-    border: 2px solid rgb(238, 88, 29);
-
-}
 .noFound {
     color: rgb(212, 231, 35);
+}
+.loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error {
+    margin: 0 auto;
+    width: 320px;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    background: #19161d;
+    border: 2px solid rgb(238, 88, 29);
+    text-align: center;
+    color: #a7a1a1;
+}
+
+.errorText {
+    font-weight: 700;
+    color: red;
 }

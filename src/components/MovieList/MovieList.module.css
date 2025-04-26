@@ -1,3 +1,25 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
+.movieList {
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.movieItem {
+    width: 262px;
+    padding: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #19161d;
+    border: 2px solid rgb(238, 88, 29);
+
+}
 .imgContainer {
     position: relative;
     width: 230px;
@@ -45,3 +67,4 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+

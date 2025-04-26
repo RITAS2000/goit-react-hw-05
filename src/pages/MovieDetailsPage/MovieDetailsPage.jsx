@@ -1,6 +1,6 @@
 import { getMovieById } from '../../api.js';
 import { useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import css from './MovieDetailsPage.module.css';
 import { format } from 'date-fns';
 import { Link, useLocation, Outlet } from 'react-router-dom';
@@ -13,8 +13,8 @@ export default function MovieDetailsPage() {
 
   const [movie, setMovie] = useState(null);
   const [error, setError] = useState(false);
-
   const location = useLocation();
+  const backLink = useRef(location.state ?? '/movies');
 
   useEffect(() => {
     getMovieById(movieId)
@@ -40,12 +40,12 @@ export default function MovieDetailsPage() {
   }
 
   const year = format(new Date(movie.release_date), 'yyyy');
-  const backLink = location.state?.from || '/movies';
+
   return (
     <>
       <div className={css.container}>
         <Toaster position="top-right" />
-        <Link to={backLink} className={css.button}>
+        <Link to={backLink.current} className={css.button}>
           <BsArrowLeft />
           Go back
         </Link>
