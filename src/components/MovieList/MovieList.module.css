@@ -41,5 +41,7 @@
     text-align: center;
     height: 43.03px;
     color: #fff3b0;
-        text-shadow: 0 0 2px #2f0863, 0 0 5px #2f0863;
+    text-shadow: 0 0 2px #2f0863, 0 0 5px #2f0863;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
