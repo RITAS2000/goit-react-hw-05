@@ -18,6 +18,7 @@ export default function MovieReviews() {
         toast.error(error.message || 'Something went wrong');
       });
   }, [movieId]);
+
   if (!reviews) {
     return;
   }

@@ -19,7 +19,6 @@ export default function MovieDetailsPage() {
   useEffect(() => {
     getMovieById(movieId)
       .then((data) => {
-        console.log('DATA FROM API', data);
         if (!data || !data.id) {
           setError(true);
           return;

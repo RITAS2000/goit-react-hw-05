@@ -16,7 +16,6 @@ export default function MoviesPage() {
     async function fetchMovies() {
       try {
         const results = await searchMovies(query);
-        console.log('Results from API:', results);
         setMovies(results);
       } catch (error) {
         toast.error(error.message || 'Something went wrong');
