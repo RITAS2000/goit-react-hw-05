@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import { getPopularMovies } from '../../api.js';
 import css from './HomePage.module.css';
-import { Link, useLocation } from 'react-router-dom';
+
 import MovieList from '../../components/MovieList/MovieList.jsx';
 import { Toaster, toast } from 'react-hot-toast';
 
 export default function HomePage() {
   const [movies, setMovies] = useState([]);
-  const location = useLocation();
+
   useEffect(() => {
     getPopularMovies()
       .then((data) => {
@@ -26,13 +26,12 @@ export default function HomePage() {
         {movies.map((movie) => {
           return (
             <li className={css.movieItem} key={movie.id}>
-              <Link to={`/movies/${movie.id}`} state={{ from: location }}>
-                <MovieList
-                  poster_path={movie.poster_path}
-                  title={movie.title}
-                  vote_average={movie.vote_average}
-                />
-              </Link>
+              <MovieList
+                poster_path={movie.poster_path}
+                title={movie.title}
+                vote_average={movie.vote_average}
+                id={movie.id}
+              />
             </li>
           );
         })}

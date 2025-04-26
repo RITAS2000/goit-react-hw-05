@@ -7,7 +7,7 @@
     box-shadow: 0 0 10px white;
     transition: box-shadow 0.4s ease;
     border: 1px solid #fff; 
-               
+    margin-bottom: 24px;               
 }
 .imgContainer:hover{
     box-shadow:
@@ -36,4 +36,10 @@
     -webkit-text-stroke: 1px #f1edf7;
     color: #2f0863;
 
+}
+.title {
+    text-align: center;
+    height: 43.03px;
+    color: #fff3b0;
+        text-shadow: 0 0 2px #2f0863, 0 0 5px #2f0863;
 }
