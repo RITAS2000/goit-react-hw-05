@@ -11,6 +11,12 @@
     padding: 30px 16px;
     background: #19161d;
 }
+@media (max-width:767px) {
+    .container {
+            width: 280px;
+          
+        }
+}
 
 .span {
     color:rgb(212, 231, 35);
