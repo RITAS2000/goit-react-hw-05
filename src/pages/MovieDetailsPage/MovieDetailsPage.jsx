@@ -19,7 +19,8 @@ export default function MovieDetailsPage() {
   useEffect(() => {
     getMovieById(movieId)
       .then((data) => {
-        if (!data) {
+        console.log('DATA FROM API', data);
+        if (!data || !data.id) {
           setError(true);
           return;
         }
@@ -30,8 +31,9 @@ export default function MovieDetailsPage() {
         setError(true);
       });
   }, [movieId]);
+
   if (error) {
-    return <NotFoundPage />; // показуємо сторінку 404
+    return <NotFoundPage />;
   }
 
   if (!movie) {

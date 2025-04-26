@@ -46,6 +46,5 @@ export async function getMovieReviews(movie_id) {
 
 export async function searchMovies(query) {
   const response = await axios.get(`${BASE_URL_3}&query=${query}`, options);
-  console.log('API Response:', response.data.results);
   return response.data.results;
 }
