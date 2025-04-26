@@ -6,6 +6,9 @@ const apiToken = import.meta.env.VITE_API_TOKEN;
 const BASE_URL_1 =
   'https://api.themoviedb.org/3/movie/popular?language=en-US&page=1';
 const BASE_URL_2 = 'https://api.themoviedb.org/3/movie/';
+const BASE_URL_3 =
+  'https://api.themoviedb.org/3/search/movie?include_adult=false&language=en-US&page=1';
+
 const options = {
   headers: {
     Authorization: `Bearer ${apiToken}`,
@@ -30,8 +33,6 @@ export async function getMovieCast(movie_id) {
     `${BASE_URL_2}${movie_id}/credits?language=en-US`,
     options,
   );
-
-  console.log('🚀 ~ getMovieCast ~ response:', response.data.cast);
   return response.data.cast;
 }
 
@@ -40,5 +41,11 @@ export async function getMovieReviews(movie_id) {
     `${BASE_URL_2}${movie_id}/reviews?language=en-US&page=1`,
     options,
   );
+  return response.data.results;
+}
+
+export async function searchMovies(query) {
+  const response = await axios.get(`${BASE_URL_3}&query=${query}`, options);
+  console.log('API Response:', response.data.results);
   return response.data.results;
 }

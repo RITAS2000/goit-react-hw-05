@@ -8,9 +8,8 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-   
-}
 
+}
 .movieItem {
     width: 262px;
     padding: 16px;
@@ -18,11 +17,8 @@
     overflow: hidden;
     background: #19161d;
     border: 2px solid rgb(238, 88, 29);
-    
+
 }
-.title {
-    margin-bottom: 20px;
-    color: #fff3b0;
-    text-shadow: 0 0 2px #2f0863, 0 0 5px #2f0863;
-    margin-bottom: 20px;
+.noFound {
+    color: rgb(212, 231, 35);
 }

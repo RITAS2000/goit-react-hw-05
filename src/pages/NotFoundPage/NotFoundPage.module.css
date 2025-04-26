@@ -1,0 +1,35 @@
+.container {
+    width: 600px;
+    margin: 0 auto;
+    border: 2px solid rgb(238, 88, 29);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 30px 16px;
+    background: #19161d;
+}
+
+.span {
+    color:rgb(212, 231, 35);
+    font-size: 40px;
+}
+.title {
+    color: #e0caff;
+}
+.text {
+    color: #a7a1a1;
+}
+.link {
+    display: inline-block;
+    color: #fff3b0;
+    text-shadow: 0 0 2px #b11616, 0 0 5px #f37c7c;
+    transition: transform 0.4s ease;
+}
+.link:hover,
+.link:focus {
+    transform: scale(1.05);
+
+}
