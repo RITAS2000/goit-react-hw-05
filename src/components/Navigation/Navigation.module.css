@@ -7,7 +7,7 @@
     height: 100%;
     padding-left: 300px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .navContainer {
         padding-left: 20px;
         gap: 40px;
@@ -25,4 +25,10 @@
 
 .headerText:hover {
     transform: scale(1.05);
+}
+@media (max-width: 767px) {
+    .headerText {
+            font-size: 34px;
+            
+        }
 }
